@@ -1,0 +1,212 @@
+:root {
+  /*Colors*/
+  --primary-text-color: hsl(215, 51%, 70%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line-color: hsl(215, 32%, 27%);
+  --heading-color: hsl(0, 0%, 100%);
+  /*Fonts*/
+  /*font-family: 'Outfit', sans-serif;*/
+  --main-font: 'Outfit', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media and screen only (min-width:375px) {}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg);
+  font-weight:400;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-left: 1em;
+  text-align: left;
+}
+
+.card {
+  background-color: var(--card-bg);
+  font-family: var(--main-font);
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  max-width: min(80vw, 300px);
+  height: auto;
+  border-radius: 15px;
+  margin: 50px auto;
+}
+
+.card-body {
+  box-shadow: 10px 25px hsl(217, 54%, 10%, 1), -10px 25px hsl(217, 54%, 10%, 0.9),
+  20px 20px hsl(217, 54%, 10%, 0.8), -20px 20px hsl(217, 54%, 10%, 0.7),
+  30px 15px hsl(217, 54%, 10%, 0.6), -30px 15px hsl(217, 54%, 10%, 0.5), 40px 10px hsl(217, 54%, 10%, 0.4),
+  -30px 15px hsl(217, 54%, 10%, 0.3), -40px 10px hsl(217, 54%, 10%, 0.2), -50px 5px hsl(217, 54%, 10%, 0.1),
+
+  -10px -25px hsl(217, 54%, 10%, 1), 10px -25px hsl(217, 54%, 10%, 0.9),
+  -20px -20px hsl(217, 54%, 10%, 0.8), 20px -20px hsl(217, 54%, 10%, 0.7),
+  -30px -15px hsl(217, 54%, 10%, 0.6), 30px -15px hsl(217, 54%, 10%, 0.5), -40px -10px hsl(217, 54%, 10%, 0.4),
+  30px -15px hsl(217, 54%, 10%, 0.3), 40px -10px hsl(217, 54%, 10%, 0.2), 50px -5px hsl(217, 54%, 10%, 0.1) ;
+}
+
+/*Images*/
+
+
+.card-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image {
+  max-width: 90%;
+  max-height:270px;
+  margin: 1em;
+  border-radius:5px;
+}
+
+
+.overlay {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: cyan;
+  border-radius:5px;
+  width: min(73%, 270px);
+  height:270px;
+  overflow:hidden;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+
+
+}
+
+.overlay:hover,
+.overlay:active {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: cyan;
+  opacity: 0.7;
+}
+
+
+.view {
+  height: 2em;
+  opacity:1;
+}
+
+
+.card-image:hover,
+.card-image:active {
+  cursor: pointer;
+}
+
+.avatar {
+  width: 2em;
+  height: 2em;
+  border: inset;
+  border-radius: 100%;
+  border-color: white;
+  border-width: 0.1em;
+}
+
+/*Text*/
+.card-heading {
+  color: var(--heading-color);
+  font-weight: 600;
+  margin: auto 1em;
+  font-size: 18px;
+  display: flex;
+  align-items: flex-start;
+  width: auto;
+}
+
+.card-heading:hover,
+.creator:hover,
+.card-heading:active,
+.creator:active {
+  color: cyan;
+  cursor: pointer;
+}
+
+.card-text {
+  color: var(--primary-text-color);
+  font-weight: 300;
+}
+
+.left {
+  color: cyan;
+  font-family: var(--main-font);
+  text-align: left;
+  margin-left: 1em;
+  font-size: 0.7em;
+  display: flex;
+  align-items: flex-end;
+}
+
+.ethereum {
+  margin-right: 0.5em;
+  width: 0.7em;
+  height: 1.1em;
+}
+
+.time {
+  color: var(--primary-text-color);
+  display: flex;
+  margin-right: 1em;
+  font-size: 0.7em;
+  align-items: flex-end;
+}
+
+.clock {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  margin: 1em;
+}
+
+.card-footer>p {
+  color: var(--primary-text-color);
+}
+
+hr {
+  width: calc(100% - 1em);
+  align: center;
+  border: 1px solid var(--line-color);
+}
+
+.creator {
+  color: var(--heading-color);
+  font-family: var(--main-font);
+  font-weight:300;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
