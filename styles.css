@@ -1,3 +1,6 @@
+/*############################################################################
+                            Global Settings
+##############################################################################*/
 :root {
   /*Colors*/
   --primary-text-color: hsl(215, 51%, 70%);
@@ -6,7 +9,7 @@
   --line-color: hsl(215, 32%, 27%);
   --heading-color: hsl(0, 0%, 100%);
   /*Fonts*/
-  /*font-family: 'Outfit', sans-serif;*/
+
   --main-font: 'Outfit', sans-serif;
 }
 
@@ -23,14 +26,10 @@ body {
   font-weight:400;
 }
 
-a {
-  text-decoration: none;
-}
 
-p {
-  margin-left: 1em;
-  text-align: left;
-}
+/*############################################################################
+                            Card
+##############################################################################*/
 
 .card {
   background-color: var(--card-bg);
@@ -44,6 +43,10 @@ p {
   margin: 50px auto;
 }
 
+/*############################################################################
+                            Card Shadow
+##############################################################################*/
+
 .card-body {
   box-shadow: 10px 25px hsl(217, 54%, 10%, 1), -10px 25px hsl(217, 54%, 10%, 0.9),
   20px 20px hsl(217, 54%, 10%, 0.8), -20px 20px hsl(217, 54%, 10%, 0.7),
@@ -56,7 +59,9 @@ p {
   30px -15px hsl(217, 54%, 10%, 0.3), 40px -10px hsl(217, 54%, 10%, 0.2), 50px -5px hsl(217, 54%, 10%, 0.1) ;
 }
 
-/*Images*/
+/*############################################################################
+                          Images
+##############################################################################*/
 
 
 .card-face {
@@ -99,6 +104,7 @@ p {
   opacity: 0.7;
 }
 
+/*Eye Icon */
 
 .view {
   height: 2em;
@@ -120,7 +126,31 @@ p {
   border-width: 0.1em;
 }
 
-/*Text*/
+.clock {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
+.creator {
+  color: var(--heading-color);
+  font-family: var(--main-font);
+  font-weight:300;
+}
+
+
+/*############################################################################
+                          Card Text Content
+##############################################################################*/
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-left: 1em;
+  text-align: left;
+}
+
 .card-heading {
   color: var(--heading-color);
   font-weight: 600;
@@ -168,11 +198,6 @@ p {
   align-items: flex-end;
 }
 
-.clock {
-  width: 1.2em;
-  height: 1.2em;
-  margin-right: 0.5em;
-}
 
 .card-bottom {
   display: flex;
@@ -195,11 +220,6 @@ hr {
   border: 1px solid var(--line-color);
 }
 
-.creator {
-  color: var(--heading-color);
-  font-family: var(--main-font);
-  font-weight:300;
-}
 
 .attribution {
   font-size: 11px;
