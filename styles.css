@@ -87,13 +87,10 @@ body {
   opacity: 0;
   border-radius:5px;
   width: min(73%, 270px);
-  height:270px;
-  overflow:hidden;
-  transition: ease-in-out 0.5s;
-
-
-
+  height: min(41%, 270px);
+  transition: ease-in-out 0.4s;
 }
+
 
 .overlay:hover,
 .overlay:active {
@@ -105,12 +102,29 @@ body {
   opacity:1;
 }
 
+@media only screen and (max-width: 290px){
+
+.overlay {
+  height:31%;
+}
+
+}
+
+
+@media only screen and (min-width: 1020px){
+
+.overlay {
+  height: min(45%, 274px);
+}
+
+}
+
 /*Eye Icon */
 
 .view {
   height: 2em;
+  position:absolute;
 }
-
 
 .card-image:hover,
 .card-image:active {
