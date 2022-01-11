@@ -17,7 +17,6 @@
   box-sizing: border-box;
 }
 
-@media and screen only (min-width:375px) {}
 
 body {
   margin: 0;
@@ -83,17 +82,14 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  background-color: rgb(0,255,247);
+  background-color: hsla(178, 100%, 50%);
   opacity: 0;
   border-radius:5px;
   width: min(73%, 270px);
-  height:270px;
-  overflow:hidden;
-  transition: ease-in-out 0.5s;
-
-
-
+  height: min(41%, 270px);
+  transition: ease-in-out 0.4s;
 }
+
 
 .overlay:hover,
 .overlay:active {
@@ -101,17 +97,32 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  background-color: rgba(0,255,247, 0.5);
+  background-color: hsla(178, 100%, 50%, 0.4);
   opacity:1;
+}
+
+@media only screen and (max-width: 290px){
+
+.overlay {
+  height:31%;
+}
+
+}
+
+
+@media only screen and (min-width: 1020px){
+
+.overlay {
+  height: min(45%, 274px);
+}
+
 }
 
 /*Eye Icon */
 
 .view {
   height: 2em;
-  opacity:1;
 }
-
 
 .card-image:hover,
 .card-image:active {
