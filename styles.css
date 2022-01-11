@@ -83,13 +83,14 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  background-color: cyan;
+  background-color: hsla(178, 100%, 50%);
+  opacity: 0;
   border-radius:5px;
   width: min(73%, 270px);
   height:270px;
   overflow:hidden;
-  opacity: 0;
   transition: ease-in-out 0.5s;
+
 
 
 }
@@ -100,8 +101,8 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  background-color: cyan;
-  opacity: 0.7;
+  background-color: hsla(178, 100%, 50%, 0.4);
+  opacity:1;
 }
 
 /*Eye Icon */
