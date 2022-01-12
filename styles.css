@@ -165,7 +165,7 @@ p {
   color: var(--heading-color);
   font-weight: 600;
   margin: auto 1em;
-  font-size: 18px;
+  font-size: 8px;
   display: flex;
   align-items: flex-start;
   width: auto;
