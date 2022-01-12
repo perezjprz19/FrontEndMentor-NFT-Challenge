@@ -71,7 +71,7 @@ body {
 
 .card-image {
   max-width: 90%;
-  max-height:270px;
+  max-height:auto;
   margin: 1em;
   border-radius:5px;
 }
@@ -86,7 +86,7 @@ body {
   opacity: 0;
   border-radius:5px;
   width: min(73%, 270px);
-  height: min(41%, 270px);
+  height: min(73%, 270px);
   transition: ease-in-out 0.4s;
 }
 
@@ -101,21 +101,19 @@ body {
   opacity:1;
 }
 
-@media only screen and (max-width: 290px){
+@media only screen and (max-width: 400px){
 
 .overlay {
-  height:31%;
+  height:min(40%, 270px);
 }
 
 }
 
-
-@media only screen and (min-width: 1020px){
-
-.overlay {
-  height: min(45%, 274px);
-}
-
+@media only screen and (max-width:350px)  {
+.overlay{
+  min-height:233px;
+  max-height:31%;
+  }
 }
 
 /*Eye Icon */
