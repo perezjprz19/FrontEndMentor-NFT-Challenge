@@ -87,34 +87,33 @@ body {
   border-radius:5px;
   width: min(73%, 270px);
   height: min(73%, 270px);
-  transition: ease-in-out 0.4s;
+  transition: ease-in-out 300ms;
 }
 
 
 .overlay:hover,
 .overlay:active {
   position: absolute;
-  justify-content: center;
-  align-items: center;
-  display: flex;
   background-color: hsla(178, 100%, 50%, 0.4);
   opacity:1;
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
 
 .overlay {
   height:min(40%, 270px);
+
 }
 
 }
 
 @media only screen and (max-width:350px)  {
 .overlay{
-  min-height:233px;
-  max-height:31%;
+height: max(30%, 230px);
   }
 }
+
+
 
 /*Eye Icon */
 
