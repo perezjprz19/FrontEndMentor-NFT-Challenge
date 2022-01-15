@@ -161,7 +161,7 @@ p {
   color: var(--heading-color);
   font-weight: 600;
   margin: auto 1em;
-  font-size: 8px;
+  font-size: 0.7em;
   display: flex;
   align-items: flex-start;
   width: auto;
@@ -185,23 +185,23 @@ p {
   font-family: var(--main-font);
   text-align: left;
   margin-left: 1em;
-  font-size: 0.7em;
+  font-size: 0.9em;
   display: flex;
   align-items: flex-end;
 }
 
 .ethereum {
   margin-right: 0.5em;
-  width: 0.7em;
-  height: 1.1em;
 }
 
 .time {
+  display:flex;
   color: var(--primary-text-color);
   display: flex;
   margin-right: 1em;
-  font-size: 0.7em;
+  font-size: .9em;
   align-items: flex-end;
+
 }
 
 
