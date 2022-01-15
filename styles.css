@@ -146,7 +146,7 @@ p {
   font-size: 0.7em;
   display: flex;
   align-items: flex-start;
-  width: auto;
+  width: fit-content;
 }
 
 .card-heading:hover,
