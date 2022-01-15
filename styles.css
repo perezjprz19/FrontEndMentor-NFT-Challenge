@@ -9,7 +9,6 @@
   --line-color: hsl(215, 32%, 27%);
   --heading-color: hsl(0, 0%, 100%);
   /*Fonts*/
-
   --main-font: 'Outfit', sans-serif;
 }
 
@@ -17,19 +16,16 @@
   box-sizing: border-box;
 }
 
-
 body {
   margin: 0;
   padding: 0;
   background-color: var(--main-bg);
-  font-weight:400;
+  font-weight: 400;
 }
-
 
 /*############################################################################
                             Card
 ##############################################################################*/
-
 .card {
   background-color: var(--card-bg);
   font-family: var(--main-font);
@@ -45,24 +41,20 @@ body {
 /*############################################################################
                             Card Shadow
 ##############################################################################*/
-
 .card-body {
   box-shadow: 10px 25px hsl(217, 54%, 10%, 1), -10px 25px hsl(217, 54%, 10%, 0.9),
-  20px 20px hsl(217, 54%, 10%, 0.8), -20px 20px hsl(217, 54%, 10%, 0.7),
-  30px 15px hsl(217, 54%, 10%, 0.6), -30px 15px hsl(217, 54%, 10%, 0.5), 40px 10px hsl(217, 54%, 10%, 0.4),
-  -30px 15px hsl(217, 54%, 10%, 0.3), -40px 10px hsl(217, 54%, 10%, 0.2), -50px 5px hsl(217, 54%, 10%, 0.1),
-
-  -10px -25px hsl(217, 54%, 10%, 1), 10px -25px hsl(217, 54%, 10%, 0.9),
-  -20px -20px hsl(217, 54%, 10%, 0.8), 20px -20px hsl(217, 54%, 10%, 0.7),
-  -30px -15px hsl(217, 54%, 10%, 0.6), 30px -15px hsl(217, 54%, 10%, 0.5), -40px -10px hsl(217, 54%, 10%, 0.4),
-  30px -15px hsl(217, 54%, 10%, 0.3), 40px -10px hsl(217, 54%, 10%, 0.2), 50px -5px hsl(217, 54%, 10%, 0.1) ;
+    20px 20px hsl(217, 54%, 10%, 0.8), -20px 20px hsl(217, 54%, 10%, 0.7),
+    30px 15px hsl(217, 54%, 10%, 0.6), -30px 15px hsl(217, 54%, 10%, 0.5), 40px 10px hsl(217, 54%, 10%, 0.4),
+    -30px 15px hsl(217, 54%, 10%, 0.3), -40px 10px hsl(217, 54%, 10%, 0.2), -50px 5px hsl(217, 54%, 10%, 0.1),
+    -10px -25px hsl(217, 54%, 10%, 1), 10px -25px hsl(217, 54%, 10%, 0.9),
+    -20px -20px hsl(217, 54%, 10%, 0.8), 20px -20px hsl(217, 54%, 10%, 0.7),
+    -30px -15px hsl(217, 54%, 10%, 0.6), 30px -15px hsl(217, 54%, 10%, 0.5), -40px -10px hsl(217, 54%, 10%, 0.4),
+    30px -15px hsl(217, 54%, 10%, 0.3), 40px -10px hsl(217, 54%, 10%, 0.2), 50px -5px hsl(217, 54%, 10%, 0.1);
 }
 
 /*############################################################################
                           Images
 ##############################################################################*/
-
-
 .card-face {
   display: flex;
   justify-content: center;
@@ -71,11 +63,10 @@ body {
 
 .card-image {
   max-width: 90%;
-  max-height:auto;
+  max-height: auto;
   margin: 1em;
-  border-radius:5px;
+  border-radius: 5px;
 }
-
 
 .overlay {
   position: absolute;
@@ -84,44 +75,36 @@ body {
   display: flex;
   background-color: hsla(178, 100%, 50%);
   opacity: 0;
-  border-radius:5px;
+  border-radius: 5px;
   width: min(73%, 270px);
   height: min(73%, 270px);
- }
-
+}
 
 .overlay:hover,
-.overlay:active  {
+.overlay:active {
   position: absolute;
   background-color: hsla(178, 100%, 50%, 0.4);
-  opacity:1;
+  opacity: 1;
   transition: ease-in-out 300ms;
   cursor: pointer;
 }
 
 @media only screen and (max-width: 400px) {
-
-.overlay {
-  height:min(40%, 270px);
-
-}
-
-}
-
-@media only screen and (max-width:350px)  {
-.overlay{
-height: max(30%, 230px);
+  .overlay {
+    height: min(40%, 270px);
   }
 }
 
-
+@media only screen and (max-width:350px) {
+  .overlay {
+    height: max(30%, 230px);
+  }
+}
 
 /*Eye Icon */
-
 .view {
   height: 2em;
 }
-
 
 .avatar {
   width: 2em;
@@ -141,9 +124,8 @@ height: max(30%, 230px);
 .creator {
   color: var(--heading-color);
   font-family: var(--main-font);
-  font-weight:300;
+  font-weight: 300;
 }
-
 
 /*############################################################################
                           Card Text Content
@@ -195,15 +177,13 @@ p {
 }
 
 .time {
-  display:flex;
+  display: flex;
   color: var(--primary-text-color);
   display: flex;
   margin-right: 1em;
   font-size: .9em;
   align-items: flex-end;
-
 }
-
 
 .card-bottom {
   display: flex;
@@ -225,7 +205,6 @@ hr {
   align: center;
   border: 1px solid var(--line-color);
 }
-
 
 .attribution {
   font-size: 1em;
