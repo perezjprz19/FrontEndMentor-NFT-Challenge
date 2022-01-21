@@ -66,6 +66,7 @@ body {
   max-height: auto;
   margin: 1em;
   border-radius: 5px;
+  position: relative;
 }
 
 .overlay {
@@ -122,6 +123,7 @@ body {
 }
 
 .creator {
+  position: relative;
   color: var(--heading-color);
   font-family: var(--main-font);
   font-weight: 300;
@@ -194,20 +196,15 @@ p {
   display: flex;
   align-items: center;
   margin: 1em;
+  border-top: 1px solid var(--line-color);
 }
 
 .card-footer>p {
   color: var(--primary-text-color);
 }
 
-hr {
-  width: calc(100% - 1em);
-  align: center;
-  border: 1px solid var(--line-color);
-}
-
 .attribution {
-  padding:10px;
+  padding: 10px;
   font-size: 1em;
   text-align: center;
   color: var(--primary-text-color);
